@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmol Tiwari — BTech Engineering Student</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="webCanvas" aria-hidden="true"></canvas>
+
+  <div class="spider" id="spider" aria-hidden="true">
+    <svg viewBox="0 0 60 60" width="36" height="36">
+      <circle cx="30" cy="12" r="8" fill="#cc0000"/>
+      <circle cx="20" cy="22" r="5" fill="#cc0000"/>
+      <circle cx="40" cy="22" r="5" fill="#cc0000"/>
+      <circle cx="15" cy="32" r="4" fill="#cc0000"/>
+      <circle cx="45" cy="32" r="4" fill="#cc0000"/>
+      <circle cx="20" cy="42" r="3.5" fill="#cc0000"/>
+      <circle cx="40" cy="42" r="3.5" fill="#cc0000"/>
+      <circle cx="30" cy="12" r="3" fill="#ff3333"/>
+      <line x1="30" y1="20" x2="30" y2="35" stroke="#cc0000" stroke-width="2"/>
+      <line x1="20" y1="27" x2="22" y2="35" stroke="#cc0000" stroke-width="1.5"/>
+      <line x1="40" y1="27" x2="38" y2="35" stroke="#cc0000" stroke-width="1.5"/>
+      <line x1="15" y1="36" x2="22" y2="45" stroke="#cc0000" stroke-width="1.5"/>
+      <line x1="45" y1="36" x2="38" y2="45" stroke="#cc0000" stroke-width="1.5"/>
+      <line x1="20" y1="45" x2="25" y2="55" stroke="#cc0000" stroke-width="1"/>
+      <line x1="40" y1="45" x2="35" y2="55" stroke="#cc0000" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#hero">AT</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+          <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="tagline"><i class="fas fa-spider"></i> Hi, I'm</p>
+      <h1>Anmol Tiwari</h1>
+      <p class="subtitle">B.Tech First-Year Engineering Student</p>
+      <p class="desc">Swings through code like a web — building clean, efficient software with style.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects"><i class="fas fa-search"></i> View My Work</a>
+        <a class="btn outline" href="#contact"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-avatar" aria-hidden="true">
+      <div class="avatar-ring">
+        <div class="avatar-inner">AT</div>
+      </div>
+    </div>
+    <svg class="web-deco" viewBox="0 0 200 200" preserveAspectRatio="none">
+      <line x1="100" y1="0" x2="100" y2="200" class="web-line"/>
+      <line x1="0" y1="100" x2="200" y2="100" class="web-line"/>
+      <line x1="30" y1="0" x2="170" y2="200" class="web-line"/>
+      <line x1="170" y1="0" x2="30" y2="200" class="web-line"/>
+      <line x1="0" y1="30" x2="200" y2="170" class="web-line"/>
+      <line x1="200" y1="30" x2="0" y2="170" class="web-line"/>
+      <circle cx="100" cy="100" r="60" class="web-circle"/>
+      <circle cx="100" cy="100" r="90" class="web-circle"/>
+      <circle cx="100" cy="100" r="120" class="web-circle"/>
+    </svg>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="web-trigger" data-target="about"><div class="web-node"></div></div>
+    <div class="about-bg"></div>
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-user-graduate"></i> About Me</h2>
+      <div class="about-grid">
+        <div class="about-card fade-up">
+          <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Goal</h3>
+          <p>To build a strong foundation in software engineering and contribute to impactful projects as a budding developer.</p>
+        </div>
+        <div class="about-card fade-up">
+          <div class="card-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Focus</h3>
+          <p>Currently exploring C, problem-solving, data structures, and the fundamentals of web development.</p>
+        </div>
+        <div class="about-card fade-up">
+          <div class="card-icon"><i class="fas fa-book"></i></div>
+          <h3>Learning</h3>
+          <p>Always curious — keen on learning new languages, tools, and frameworks through hands-on projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="web-trigger" data-target="skills"><div class="web-node"></div></div>
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-star"></i> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+          <span class="skill-name">C Programming</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-html5"></i></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+          <span class="skill-name">HTML / CSS</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="65"></div></div>
+          <span class="skill-name">Problem Solving</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div>
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="50"></div></div>
+          <span class="skill-name">Git & GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="web-trigger" data-target="projects"><div class="web-node"></div></div>
+    <div class="projects-bg"></div>
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-laptop-code"></i> Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card fade-up">
+          <div class="project-image"><i class="fas fa-terminal"></i></div>
+          <div class="project-body">
+            <h3>Console-Based Notes Manager</h3>
+            <p>A lightweight C application to create, view, and manage notes from the terminal.</p>
+            <span class="badge"><i class="fas fa-code"></i> C</span>
+          </div>
+        </article>
+        <article class="project-card fade-up">
+          <div class="project-image"><i class="fas fa-calculator"></i></div>
+          <div class="project-body">
+            <h3>Calculator with Operator Precedence</h3>
+            <p>Implements arithmetic expressions respecting PEMDAS rules using stack-based parsing.</p>
+            <span class="badge"><i class="fas fa-code"></i> C</span>
+          </div>
+        </article>
+        <article class="project-card fade-up">
+          <div class="project-image"><i class="fas fa-gamepad"></i></div>
+          <div class="project-body">
+            <h3>Snake & Ladder Game</h3>
+            <p>A fun terminal-based Snake & Ladder game in C with two-player support, dice rolling, and animated board.</p>
+            <span class="badge"><i class="fas fa-code"></i> C</span>
+          </div>
+        </article>
+        <article class="project-card fade-up">
+          <div class="project-image"><i class="fas fa-globe"></i></div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive, animated portfolio site built with HTML & CSS showcasing my journey.</p>
+            <span class="badge"><i class="fas fa-code"></i> HTML/CSS</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="web-trigger" data-target="contact"><div class="web-node"></div></div>
+    <div class="contact-bg"></div>
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-address-book"></i> Let's Connect</h2>
+      <p class="contact-intro">I'm always open to discussing new ideas, collaborations, or just having a chat about tech.</p>
+      <div class="contact-links fade-up">
+        <a class="contact-card" href="mailto:anmoltiwari196@gmail.com">
+          <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+          <span>Email</span>
+          <small>anmoltiwari196@gmail.com</small>
+        </a>
+        <a class="contact-card" href="https://github.com/anmoltiwari196-web" target="_blank" rel="noopener">
+          <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+          <span>GitHub</span>
+          <small>anmoltiwari196-web</small>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/anmol-tiwari-0725b7351/" target="_blank" rel="noopener">
+          <div class="contact-icon-wrap"><i class="fab fa-linkedin"></i></div>
+          <span>LinkedIn</span>
+          <small>anmol-tiwari</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><i class="fas fa-spider"></i> © 2026 Anmol Tiwari. Built with ❤️.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
